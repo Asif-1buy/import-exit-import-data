@@ -1,0 +1,220 @@
+services:
+  importer_01:
+    image: exim-importer:latest            # build first:  docker build -t exim-importer:latest .
+    env_file: .env                         # common secrets (API_URL, MONGO_URI, etc.)
+    environment:
+      START_PAGE: 57894
+      END_PAGE: 70952
+      PERSIST_DIR: /data
+    volumes:
+      - ./persist/importer_01:/data
+    restart: unless-stopped
+
+  importer_02:
+    image: exim-importer:latest
+    env_file: .env
+    environment:
+      START_PAGE: 70953
+      END_PAGE: 84011
+      PERSIST_DIR: /data
+    volumes:
+      - ./persist/importer_02:/data
+    restart: unless-stopped
+
+  importer_03:
+    image: exim-importer:latest
+    env_file: .env
+    environment:
+      START_PAGE: 84012
+      END_PAGE: 97070
+      PERSIST_DIR: /data
+    volumes:
+      - ./persist/importer_03:/data
+    restart: unless-stopped
+
+  importer_04:
+    image: exim-importer:latest
+    env_file: .env
+    environment:
+      START_PAGE: 97071
+      END_PAGE: 110129
+      PERSIST_DIR: /data
+    volumes:
+      - ./persist/importer_04:/data
+    restart: unless-stopped
+
+  importer_05:
+    image: exim-importer:latest
+    env_file: .env
+    environment:
+      START_PAGE: 110130
+      END_PAGE: 123188
+      PERSIST_DIR: /data
+    volumes:
+      - ./persist/importer_05:/data
+    restart: unless-stopped
+
+  importer_06:
+    image: exim-importer:latest
+    env_file: .env
+    environment:
+      START_PAGE: 123189
+      END_PAGE: 136247
+      PERSIST_DIR: /data
+    volumes:
+      - ./persist/importer_06:/data
+    restart: unless-stopped
+
+  importer_07:
+    image: exim-importer:latest
+    env_file: .env
+    environment:
+      START_PAGE: 136248
+      END_PAGE: 149306
+      PERSIST_DIR: /data
+    volumes:
+      - ./persist/importer_07:/data
+    restart: unless-stopped
+
+  importer_08:
+    image: exim-importer:latest
+    env_file: .env
+    environment:
+      START_PAGE: 149307
+      END_PAGE: 162365
+      PERSIST_DIR: /data
+    volumes:
+      - ./persist/importer_08:/data
+    restart: unless-stopped
+
+  importer_09:
+    image: exim-importer:latest
+    env_file: .env
+    environment:
+      START_PAGE: 162366
+      END_PAGE: 175424
+      PERSIST_DIR: /data
+    volumes:
+      - ./persist/importer_09:/data
+    restart: unless-stopped
+
+  importer_10:
+    image: exim-importer:latest
+    env_file: .env
+    environment:
+      START_PAGE: 175425
+      END_PAGE: 188483
+      PERSIST_DIR: /data
+    volumes:
+      - ./persist/importer_10:/data
+    restart: unless-stopped
+
+  importer_11:
+    image: exim-importer:latest
+    env_file: .env
+    environment:
+      START_PAGE: 188484
+      END_PAGE: 201542
+      PERSIST_DIR: /data
+    volumes:
+      - ./persist/importer_11:/data
+    restart: unless-stopped
+
+  importer_12:
+    image: exim-importer:latest
+    env_file: .env
+    environment:
+      START_PAGE: 201543
+      END_PAGE: 214601
+      PERSIST_DIR: /data
+    volumes:
+      - ./persist/importer_12:/data
+    restart: unless-stopped
+
+  importer_13:
+    image: exim-importer:latest
+    env_file: .env
+    environment:
+      START_PAGE: 214602
+      END_PAGE: 227660
+      PERSIST_DIR: /data
+    volumes:
+      - ./persist/importer_13:/data
+    restart: unless-stopped
+
+  importer_14:
+    image: exim-importer:latest
+    env_file: .env
+    environment:
+      START_PAGE: 227661
+      END_PAGE: 240719
+      PERSIST_DIR: /data
+    volumes:
+      - ./persist/importer_14:/data
+    restart: unless-stopped
+
+  importer_15:
+    image: exim-importer:latest
+    env_file: .env
+    environment:
+      START_PAGE: 240720
+      END_PAGE: 253778
+      PERSIST_DIR: /data
+    volumes:
+      - ./persist/importer_15:/data
+    restart: unless-stopped
+
+  importer_16:
+    image: exim-importer:latest
+    env_file: .env
+    environment:
+      START_PAGE: 253779
+      END_PAGE: 266837
+      PERSIST_DIR: /data
+    volumes:
+      - ./persist/importer_16:/data
+    restart: unless-stopped
+
+  importer_17:
+    image: exim-importer:latest
+    env_file: .env
+    environment:
+      START_PAGE: 266838
+      END_PAGE: 279896
+      PERSIST_DIR: /data
+    volumes:
+      - ./persist/importer_17:/data
+    restart: unless-stopped
+
+  importer_18:
+    image: exim-importer:latest
+    env_file: .env
+    environment:
+      START_PAGE: 279897
+      END_PAGE: 292955
+      PERSIST_DIR: /data
+    volumes:
+      - ./persist/importer_18:/data
+    restart: unless-stopped
+
+  importer_19:
+    image: exim-importer:latest
+    env_file: .env
+    environment:
+      START_PAGE: 292956
+      END_PAGE: 306014
+      PERSIST_DIR: /data
+    volumes:
+      - ./persist/importer_19:/data
+    restart: unless-stopped
+
+  importer_20:
+    image: exim-importer:latest
+    env_file: .env
+    environment:
+      START_PAGE: 306015
+      END_PAGE: 319040
+      PERSIST_DIR: /data
+    volumes:
+      - ./persist/importer_20:/data
+    restart: unless-stopped

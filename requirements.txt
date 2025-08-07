@@ -1,0 +1,4 @@
+requests
+pymongo
+python-dotenv
+sentry-sdk    # optional; safe even if SENTRY_DSN is empty
