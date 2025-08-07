@@ -10,4 +10,4 @@ ENV PERSIST_DIR=/data
 
 COPY . .
 
-CMD ["python", "exim-import-data.py"] # or whatever the filename is
+CMD ["python", "exim-import-data.py"]
